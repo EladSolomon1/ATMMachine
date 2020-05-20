@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.DepositController">
+   <children>
+      <AnchorPane prefHeight="80.0" prefWidth="700.0" style="-fx-background-color: #FFCD98;">
+         <children>
+            <Label layoutX="307.0" layoutY="23.0" text="Deposit">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="DepositBackImage" fitHeight="70.0" fitWidth="67.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/image-asset.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="DepositExit" layoutX="33.0" layoutY="341.0" prefHeight="55.0" prefWidth="104.0" style="-fx-background-color: #ff0000;" text="EXIT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="DepositAcountNumberLabel" layoutX="14.0" layoutY="98.0" prefHeight="53.0" prefWidth="154.0" text="Account Number:" textFill="#2000ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="DepositNumberFieldLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="151.0" prefHeight="35.0" prefWidth="113.0" style="-fx-background-color: #EC9670;" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="DepositAmountToDeposit" focusColor="#424242" layoutX="184.0" layoutY="152.0" prefHeight="29.0" prefWidth="353.0" promptText="Enter a deposit amount" unFocusColor="#ff6659" />
+      <Label fx:id="DepositAnswerLabel" alignment="CENTER" layoutX="128.0" layoutY="296.0" prefHeight="35.0" prefWidth="444.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="DepositButton" layoutX="257.0" layoutY="228.0" prefHeight="53.0" prefWidth="207.0" style="-fx-background-color: #424242;" text="Deposit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

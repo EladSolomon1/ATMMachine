@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.LoginController">
+   <children>
+      <AnchorPane prefHeight="80.0" prefWidth="700.0" style="-fx-background-color: #FFCD98;">
+         <children>
+            <Label layoutX="323.0" layoutY="23.0" text="ATM">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="LoginAccountNumber" focusColor="#424242" layoutX="174.0" layoutY="125.0" prefHeight="29.0" prefWidth="353.0" promptText="Account Number" unFocusColor="#ff6659" />
+      <JFXPasswordField fx:id="LoginPassword" focusColor="#424242" layoutX="174.0" layoutY="171.0" prefHeight="29.0" prefWidth="353.0" promptText="Password" unFocusColor="#ff6659" />
+      <JFXButton fx:id="LoginButton" layoutX="247.0" layoutY="248.0" prefHeight="53.0" prefWidth="207.0" style="-fx-background-color: #424242;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="LoginToSignUp" layoutX="14.0" layoutY="275.0" prefHeight="92.0" prefWidth="111.0" style="-fx-background-color: #99002e;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

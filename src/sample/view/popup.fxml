@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.PopUpController">
+   <children>
+      <AnchorPane prefHeight="80.0" prefWidth="700.0" style="-fx-background-color: #FFCD98;">
+         <children>
+            <Label layoutX="323.0" layoutY="23.0" text="ATM">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="PopUpAcountNumber" layoutX="207.0" layoutY="200.0" text="Account Number:" textFill="#2000ff">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="PopUpSuccess" layoutX="226.0" layoutY="80.0" text="Success!" textFill="#1dda04">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="PopUpToLogin" layoutX="226.0" layoutY="314.0" prefHeight="62.0" prefWidth="248.0" style="-fx-background-color: #424242;" text="To Login Screen" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="PopUpNumberFieldLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="300.0" layoutY="261.0" prefHeight="35.0" prefWidth="113.0" style="-fx-background-color: #EC9670;" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

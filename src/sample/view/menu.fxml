@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.MenuController">
+   <children>
+      <AnchorPane prefHeight="80.0" prefWidth="700.0" style="-fx-background-color: #FFCD98;">
+         <children>
+            <Label layoutX="268.0" layoutY="23.0" text="Account Menu">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="MenuBalance" layoutX="252.0" layoutY="116.0" prefHeight="55.0" prefWidth="196.0" style="-fx-background-color: #424242;" text="View Balance" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="MenuWithdraw" layoutX="252.0" layoutY="196.0" prefHeight="55.0" prefWidth="196.0" style="-fx-background-color: #424242;" text="Withdrawal Funds" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="MenuDeposit" layoutX="252.0" layoutY="276.0" prefHeight="55.0" prefWidth="196.0" style="-fx-background-color: #424242;" text="Deposit Funds" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="MenuExit" layoutX="23.0" layoutY="331.0" prefHeight="55.0" prefWidth="104.0" style="-fx-background-color: #ff0000;" text="EXIT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="MenuAcountNumberLabel" layoutX="20.0" layoutY="90.0" prefHeight="53.0" prefWidth="154.0" text="Account Number:" textFill="#2000ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="MenuNumberFieldLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="143.0" prefHeight="35.0" prefWidth="113.0" style="-fx-background-color: #EC9670;" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
